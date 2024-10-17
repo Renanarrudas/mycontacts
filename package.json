@@ -5,14 +5,23 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "node ./dist/index.js",
-    "dev": "ts-node ./src/index.ts"
+    "dev": "tsc --watch",
+    "lint": "eslint --ext .js,.ts .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
   },
   "dependencies": {
     "@types/node": "^22.7.6",
+    "@typescript-eslint/eslint-plugin": "^8.9.0",
+    "@typescript-eslint/parser": "^8.9.0",
+    "eslint": "^9.12.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
     "typescript": "^5.6.3"
   },
   "devDependencies": {
-    "ts-node": "^10.9.2"
+    "@eslint/js": "^9.12.0",
+    "globals": "^15.11.0",
+    "ts-node": "^10.9.2",
+    "typescript-eslint": "^8.9.0"
   }
 }
