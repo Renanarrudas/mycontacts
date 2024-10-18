@@ -1,11 +1,13 @@
 {
   "name": "mycontacts",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "API to store contacts",
+  "author": "Renan Arruda",
+  "main": "src/index.ts",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch",
+    "dev": "nodemon",
     "lint": "eslint --ext .js,.ts .",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
   },
@@ -21,6 +23,7 @@
   "devDependencies": {
     "@eslint/js": "^9.12.0",
     "globals": "^15.11.0",
+    "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
     "typescript-eslint": "^8.9.0"
   }
